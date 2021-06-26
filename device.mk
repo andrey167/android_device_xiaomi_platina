@@ -498,6 +498,15 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.dexopt.shared=quicken
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/boot/boot-image-profile.txt    
+PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.heapgrowthlimit=128m
+PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.heapsize=256m
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(DEVICE_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
