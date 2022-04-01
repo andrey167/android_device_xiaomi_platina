@@ -115,6 +115,7 @@ vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
 # Display
+sys.use_fifo_ui=1
 debug.cpurend.vsync=false
 debug.hwui.renderer=opengl
 debug.renderengine.backend=skiaglthreaded
@@ -126,6 +127,9 @@ debug.sf.enable_gl_backpressure=1
 debug.renderengine.blur_algorithm=kawase_darkmoon
 debug.sf.enable_transaction_tracing=false
 debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+debug.sf.auto_latch_unsignaled=1
+debug.sf.enable_transaction_tracing=false
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 persist.sys.sf.color_mode=9
 persist.sys.sf.native_mode=2
@@ -145,7 +149,11 @@ vendor.display.disable_skip_validate=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.gralloc.enable_fb_ubwc=1
-debug.sf.enable_egl_image_tracker=0
+debug.sf.enable_egl_image_tracker=true
+
+# Fling
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
 
 # Fastbootd
 ro.fastbootd.available=true
