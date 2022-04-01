@@ -115,6 +115,7 @@ vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
 # Display
+sys.use_fifo_ui=1
 debug.cpurend.vsync=false
 debug.hwui.renderer=opengl
 debug.renderengine.backend=skiaglthreaded
@@ -124,6 +125,9 @@ debug.sf.early_gl_phase_offset_ns=3000000
 debug.sf.early_phase_offset_ns=1500000
 debug.renderengine.blur_algorithm=kawase2_fix_aliasing
 debug.sf.enable_gl_backpressure=1
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+debug.sf.auto_latch_unsignaled=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.recomputecrop=0
