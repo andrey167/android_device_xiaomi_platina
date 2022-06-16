@@ -100,6 +100,12 @@ on boot
     # Optimize vfs cache pressure
     write /proc/sys/vm/vfs_cache_pressure 40
 
+     # Allow system to manipulate kprofiles modes and parameters
+    chown system system /sys/module/kprofiles/parameters/auto_kprofiles
+    chmod 0660 /sys/module/kprofiles/parameters/auto_kprofiles
+    chown system system /sys/module/kprofiles/parameters/mode
+    chmod 0660 /sys/module/kprofiles/parameters/mode
+
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 
