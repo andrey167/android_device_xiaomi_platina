@@ -422,6 +422,10 @@ PRODUCT_PACKAGES += \
     libsqlite.vendor \
     libsysutils.vendor
 
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
+
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     android.hardware.radio.config@1.2.vendor \
