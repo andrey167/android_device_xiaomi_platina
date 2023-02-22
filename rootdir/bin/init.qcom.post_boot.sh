@@ -114,6 +114,10 @@ case "$emmc_boot"
     ;;
 esac
 
+# Read-ahead for eMMC (/data lives on mmcblk0, not dm-*)
+echo 512 > /sys/block/mmcblk0/queue/read_ahead_kb
+echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
+
 # Post-setup services
 setprop vendor.post_boot.parsed 1
 
