@@ -516,8 +516,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.shared=quicken
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/boot/boot-image-profile.txt    
 PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.heapgrowthlimit=128m
 PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.heapsize=256m
 USE_DEX2OAT_DEBUG := false
