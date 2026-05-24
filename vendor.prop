@@ -138,6 +138,7 @@ vendor.display.disable_skip_validate=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.gralloc.enable_fb_ubwc=1
+debug.renderengine.blur_algorithm=kawase2_fix_aliasing
 
 # Fastbootd
 ro.fastbootd.available=true
