@@ -5,3 +5,10 @@ cc_library_headers {
          "QCamera2/stack/common",
     ],
 }
+cc_library_static {
+    name: "libcameraservice_extension.xiaomi_sdm660",
+    srcs: ["CameraProviderExtension.cpp"],
+    include_dirs: [
+        "frameworks/av/services/camera/libcameraservice/common"
+    ],
+}
