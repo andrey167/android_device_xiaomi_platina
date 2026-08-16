@@ -114,6 +114,7 @@ vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
 # Display
+debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.auto_latch_unsignaled=1
