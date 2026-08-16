@@ -198,6 +198,9 @@ persist.rcs.supported=1
 persist.sys.perf.scroll_opt=true
 persist.sys.perf.scroll_opt.heavy_app=1
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # Sensor
 ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.cmc=false
