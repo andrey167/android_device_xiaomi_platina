@@ -2,6 +2,9 @@
 # eBPF
 ro.bpf.kver_override=5.4.299
 
+# Blur
+ro.surface_flinger.supports_background_blur=1
+
 # Camera
 persist.vendor.bokeh.switch.lux=290
 persist.vendor.camera.depth.focus.cb=0
