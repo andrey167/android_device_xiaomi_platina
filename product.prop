@@ -40,3 +40,6 @@ iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 ro.iorapd.enable=false
+
+#Storaged
+ro.storaged.event.interval=99999
