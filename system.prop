@@ -23,6 +23,8 @@ persist.sys.fflag.override.settings_network_and_internet_v2=true
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
+# Render
+persist.hwc.ptor.enable=true
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
