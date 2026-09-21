@@ -40,3 +40,6 @@ ro.infinity.soc=Snapdragon 660
 ro.infinity.battery=3350 mAh
 ro.infinity.display=6.26″, 60Hz, 2280x1080
 ro.infinity.camera=24MP + 12MP + 5MP
+
+# Disable GC freed lines
+dalvik.vm.debug.alloc=0
