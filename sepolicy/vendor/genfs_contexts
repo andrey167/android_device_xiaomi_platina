@@ -47,3 +47,11 @@ genfscon sysfs /devices/soc/soc:hall_switch/wakeup u:object_r:sysfs_wakeup:s0
 # KProfiles
 genfscon sysfs /module/kprofiles/parameters/auto_kprofiles                                                                                     u:object_r:sysfs_kprofiles:s0
 genfscon sysfs /module/kprofiles/parameters/mode                                                                                           u:object_r:sysfs_kprofiles:s0
+
+
+# Gpu
+genfscon sysfs /class/kgsl/kgsl-3d0/devfreq/available_frequencies u:object_r:sysfs_gpu:s0
+genfscon sysfs /class/kgsl/kgsl-3d0/devfreq/min_freq u:object_r:sysfs_gpu:s0
+genfscon sysfs /class/kgsl/kgsl-3d0/max_gpuclk u:object_r:vendor_sysfs_kgsl_max_gpuclk:s0
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk u:object_r:vendor_sysfs_kgsl_max_gpuclk:s0
+
