@@ -79,8 +79,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.lineage
 
-$(call soong_config_set,libcameraservice,ext_lib,//$(COMMON_PATH):libcameraservice_extension.xiaomi_sdm660)
-
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.6:64 \
