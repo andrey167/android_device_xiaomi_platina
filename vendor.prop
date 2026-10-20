@@ -116,6 +116,7 @@ vidc.enc.dcvs.extra-buff-count=2
 
 # Display
 debug.renderengine.backend=skiaglthreaded
+debug.renderengine.blur_algorithm=kawase_darkmoon
 debug.sf.enable_transaction_tracing=false
 persist.sys.sf.color_mode=9
 persist.sys.sf.native_mode=2
