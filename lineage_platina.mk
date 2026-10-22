@@ -38,3 +38,15 @@ TARGET_VENDOR_PRODUCT_NAME := platina
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="platina-user 10 QKQ1.190910.002 V12.0.3.0.QDTMIXM release-keys" \
     BuildFingerprint=Xiaomi/platina/platina:10/QKQ1.190910.002/V12.0.3.0.QDTMIXM:user/release-keys
+
+
+# Evolution specific Flags 
+EVO_BUILD_TYPE := Unofficial
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+BUILD_BCR := true
+TARGET_HAS_UDFPS := false
+PERF_ANIM_OVERRIDE:= true
+TARGET_ENABLE_BLUR := true
