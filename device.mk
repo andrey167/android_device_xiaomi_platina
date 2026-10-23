@@ -70,6 +70,11 @@ PRODUCT_PACKAGES += \
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Dolby
+$(call inherit-product, vendor/dolby/dolby-setup.mk)
+# Dolby Vision
+TARGET_SUPPORTS_DOVI := true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.lineage
