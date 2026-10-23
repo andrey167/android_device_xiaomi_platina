@@ -12,3 +12,4 @@ set_prop(hal_power_default, vendor_power_prop)
 
 # Hide dac_override spam
 dontaudit hal_power_default self:capability dac_override;
+allow init sysfs_battery_supply:file rw_file_perms;
