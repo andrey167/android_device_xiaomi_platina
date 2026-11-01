@@ -82,25 +82,10 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE := \
-    androidboot.boot_devices=soc/c0c4000.sdhci \
-    androidboot.configfs=true \
-    androidboot.hardware=qcom \
-    androidboot.usbcontroller=a800000.dwc3 \
-    ehci-hcd.park=3 \
-    loop.max_part=7 \
-    lpm_levels.sleep_disabled=1 \
-    msm_rtb.filter=0x37 \
-    service_locator.enable=1 \
-    swiotlb=1 \
-    usbcore.autosuspend=7 \
-    user_debug=31
-
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_PAGESIZE := 4096
+INLINE_KERNEL_BUILDING := true
+TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_CONFIG := platina_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
 # Media
 TARGET_USES_ION := true
