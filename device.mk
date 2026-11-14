@@ -426,6 +426,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     KProfiles
 
+# Bypass charging
+PRODUCT_PACKAGES += \
+    BypassCharge
+
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     android.hardware.radio.config@1.2.vendor \
